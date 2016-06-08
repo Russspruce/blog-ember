@@ -1,0 +1,14 @@
+{ "blogs": [{
+    "title": "First Post",
+    "date": "June 3, 2016",
+    "body": "Welcome to the blog!"
+  }, {
+    "title": "Second Post",
+    "date": "June 4, 2016",
+    "body": "You're back!"
+  }, {
+    "title": "Third Post",
+    "date": "June 5, 2016",
+    "body": "Nothing to say yet!"
+  }]
+}
