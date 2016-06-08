@@ -1,1 +1,15 @@
-{{outlet}}
+<h1> How To... </h1>
+
+We hope you find how to life your life a little more freely.
+
+<ul>
+  {{#each model as |blog|}}
+  <!-- When we say destroyRental=”destroyRental”, we are mapping the destroyRental() action coming up from the component (on the left of = ) to the destroyRental() action on the route handler. -->
+     {{blog-tile blog=blog destroyBlog="destroyBlog"}}
+  {{/each}}
+</ul>
+
+{{new-blog save2="save3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
