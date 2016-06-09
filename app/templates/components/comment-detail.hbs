@@ -1,0 +1,7 @@
+<ul>
+  {{#each blog.comments as |comment|}}
+  <li>{{#link-to 'comment' comment.id}}{{comment.author}} {{comment.date}} <br> {{comment.body}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<button {{action 'destroyComment' comment}}>Delete</button>

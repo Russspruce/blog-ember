@@ -4,9 +4,11 @@ export default Ember.Component.extend({
   updateBlogPost: false,
   actions: {
     updateBlogPost() {
+
       this.set('updateBlogPost', true);
     },
     update(blog) {
+      // debugger;
       var params = {
         title: this.get('title'),
         date: this.get('date'),

@@ -13,6 +13,7 @@ export default Ember.Route.extend({
     },
 
     update(blog, params) {
+      debugger;
       Object.keys(params).forEach(function(key) {
         if( params[key]!==undefined) {
           blog.set(key,params[key]);
